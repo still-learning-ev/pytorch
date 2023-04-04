@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
-import numpy as np 
+import numpy as np
+import os 
 
 class FashionMNISTModelV1(nn.Module):
     
@@ -47,7 +48,7 @@ def predict_image(image):
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     model = FashionMNISTModelV1().to(device)
     
-    model.load_state_dict(torch.load('C:/Users/lonex/OneDrive/Desktop/GIT/pytorch/fashionMNIST/model/FashionMNIST_CNN.pth', map_location=torch.device(device)))
+    model.load_state_dict(torch.load(os.path.join(os.getcwd(), 'model/FashionMNIST_CNN.pth'), map_location=torch.device(device)))
 
     predicted_data = model(image.to(device))
     
