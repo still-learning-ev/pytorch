@@ -28,3 +28,6 @@ https://pytorch.org/
 
 2. Run Docker Image   
 `docker run -p 5000:5000 your_image_name`
+
+## Results
+![Confusion Matrix](https://freeimage.host/i/HORxlCG)
