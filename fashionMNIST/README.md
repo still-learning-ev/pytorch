@@ -29,5 +29,7 @@ https://pytorch.org/
 2. Run Docker Image   
 `docker run -p 5000:5000 your_image_name`
 
+3. Something
+
 ## Results
-![Confusion Matrix](data/confusion.jpg "Confusion")
+![Confusion Matrix](confusion.jpg "Confusion")
