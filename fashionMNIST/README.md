@@ -30,4 +30,4 @@ https://pytorch.org/
 `docker run -p 5000:5000 your_image_name`
 
 ## Results
-![Confusion Matrix](https://github.com/still-learning-ev/pytorch/blob/main/fashionMNIST/data/confusion.jpg?raw=true "Confusion")
+![Confusion Matrix](data/confusion.jpg "Confusion")
