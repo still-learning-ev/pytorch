@@ -31,4 +31,4 @@ https://pytorch.org/
 
 
 ## Results
-![Confusion Matrix](data/confusion.jpg "Confusion")
+![Confusion Matrix](https://github.com/still-learning-ev/pytorch/blob/main/fashionMNIST/data/confusion.jpg?raw=true "Confusion")
