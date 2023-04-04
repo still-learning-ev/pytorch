@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-import numpy as np
+import numpy as np 
 
 class FashionMNISTModelV1(nn.Module):
     
@@ -42,15 +42,15 @@ class FashionMNISTModelV1(nn.Module):
 
 def predict_image(image):
     image = torch.tensor(np.array(image), dtype=torch.float32).unsqueeze(dim=0).unsqueeze(dim=0)
+    image = image / 255
 
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     model = FashionMNISTModelV1().to(device)
-    import os
-    path = os.getcwd()
-    print(path)
-    model.load_state_dict(torch.load('fashionMNIST/model/FashionMNIST_CNN.pth', map_location=torch.device(device)))
+    
+    model.load_state_dict(torch.load('C:/Users/lonex/OneDrive/Desktop/GIT/pytorch/fashionMNIST/model/FashionMNIST_CNN.pth', map_location=torch.device(device)))
 
     predicted_data = model(image.to(device))
+    
 
     predict_label = torch.argmax(torch.softmax(predicted_data, dim=1))
 
