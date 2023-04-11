@@ -9,6 +9,9 @@
 5. Run the file  `train_model_in_codespaces.ipynb`
 6. This will train the model and save it to the folder in step [6]
 
+<<<<<<< HEAD
 
 # API Using Flask
 
+=======
+>>>>>>> 8e32ab0ac5e663b779a2efe0007ad5a7d22dacd9
